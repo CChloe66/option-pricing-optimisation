@@ -1,0 +1,17 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/cccurie/Desktop/Algorithms/Capstone/BlackScholesModel/asian_option_monte_carlo_parallel_pipeline'
+relocations:
+  - { offsetInCU: 0x111, offset: 0x111, size: 0x8, addend: 0x0, symName: __Z12gaussian_rngPj, symObjAddr: 0x0, symBinAddr: 0x100003660, symSize: 0x90 }
+  - { offsetInCU: 0x2D41, offset: 0x2D41, size: 0x8, addend: 0x0, symName: __Z24monte_carlo_asian_optionidddddi, symObjAddr: 0x90, symBinAddr: 0x1000036F0, symSize: 0x188 }
+  - { offsetInCU: 0x2D49, offset: 0x2D49, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x218, symBinAddr: 0x100003878, symSize: 0x148 }
+  - { offsetInCU: 0x2DDC, offset: 0x2DDC, size: 0x8, addend: 0x0, symName: __Z24monte_carlo_asian_optionidddddi._omp_fn.0, symObjAddr: 0x38C, symBinAddr: 0x1000039EC, symSize: 0x158 }
+  - { offsetInCU: 0x2DE4, offset: 0x2DE4, size: 0x8, addend: 0x0, symName: __Z24monte_carlo_asian_optionidddddi._omp_fn.1, symObjAddr: 0x4E4, symBinAddr: 0x100003B44, symSize: 0x198 }
+  - { offsetInCU: 0x2EF7, offset: 0x2EF7, size: 0x8, addend: 0x0, symName: __Z24monte_carlo_asian_optionidddddi._omp_fn.1, symObjAddr: 0x4E4, symBinAddr: 0x100003B44, symSize: 0x198 }
+  - { offsetInCU: 0x3324, offset: 0x3324, size: 0x8, addend: 0x0, symName: __ZSt4fmaxIdiEN9__gnu_cxx11__promote_2IDTplcvNS1_IT_XsrSt12__is_integerIS2_E7__valueEE6__typeELi0EcvNS1_IT0_XsrS3_IS7_E7__valueEE6__typeELi0EEXsrS3_ISB_E7__valueEE6__typeES2_S7_, symObjAddr: 0x360, symBinAddr: 0x1000039C0, symSize: 0x2C }
+  - { offsetInCU: 0x332C, offset: 0x332C, size: 0x8, addend: 0x0, symName: __Z24monte_carlo_asian_optionidddddi._omp_fn.0, symObjAddr: 0x38C, symBinAddr: 0x1000039EC, symSize: 0x158 }
+  - { offsetInCU: 0x32E3, offset: 0x32E3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x218, symBinAddr: 0x100003878, symSize: 0x148 }
+  - { offsetInCU: 0x32EB, offset: 0x32EB, size: 0x8, addend: 0x0, symName: __ZSt4fmaxIdiEN9__gnu_cxx11__promote_2IDTplcvNS1_IT_XsrSt12__is_integerIS2_E7__valueEE6__typeELi0EcvNS1_IT0_XsrS3_IS7_E7__valueEE6__typeELi0EEXsrS3_ISB_E7__valueEE6__typeES2_S7_, symObjAddr: 0x360, symBinAddr: 0x1000039C0, symSize: 0x2C }
+  - { offsetInCU: 0x341F, offset: 0x341F, size: 0x8, addend: 0x0, symName: __Z12gaussian_rngPj, symObjAddr: 0x0, symBinAddr: 0x100003660, symSize: 0x90 }
+  - { offsetInCU: 0x3427, offset: 0x3427, size: 0x8, addend: 0x0, symName: __Z24monte_carlo_asian_optionidddddi, symObjAddr: 0x90, symBinAddr: 0x1000036F0, symSize: 0x188 }
+...

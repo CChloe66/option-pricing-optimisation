@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/cccurie/Desktop/Algorithms/Capstone/asian_option_monte_carlo_reduce_memory_access'
+relocations:
+  - { offsetInCU: 0xE7, offset: 0xE7, size: 0x8, addend: 0x0, symName: __Z12gaussian_rngv, symObjAddr: 0x0, symBinAddr: 0x100003AF4, symSize: 0x84 }
+  - { offsetInCU: 0x2D6C, offset: 0x2D6C, size: 0x8, addend: 0x0, symName: __ZSt4fmaxIdiEN9__gnu_cxx11__promote_2IDTplcvNS1_IT_XsrSt12__is_integerIS2_E7__valueEE6__typeELi0EcvNS1_IT0_XsrS3_IS7_E7__valueEE6__typeELi0EEXsrS3_ISB_E7__valueEE6__typeES2_S7_, symObjAddr: 0x2F4, symBinAddr: 0x100003DE8, symSize: 0x2C }
+  - { offsetInCU: 0x2D2B, offset: 0x2D2B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1FC, symBinAddr: 0x100003CF0, symSize: 0xF8 }
+  - { offsetInCU: 0x2D33, offset: 0x2D33, size: 0x8, addend: 0x0, symName: __ZSt4fmaxIdiEN9__gnu_cxx11__promote_2IDTplcvNS1_IT_XsrSt12__is_integerIS2_E7__valueEE6__typeELi0EcvNS1_IT0_XsrS3_IS7_E7__valueEE6__typeELi0EEXsrS3_ISB_E7__valueEE6__typeES2_S7_, symObjAddr: 0x2F4, symBinAddr: 0x100003DE8, symSize: 0x2C }
+  - { offsetInCU: 0x2E5C, offset: 0x2E5C, size: 0x8, addend: 0x0, symName: __Z24asian_option_monte_carloidddddi, symObjAddr: 0x84, symBinAddr: 0x100003B78, symSize: 0x178 }
+  - { offsetInCU: 0x2E64, offset: 0x2E64, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1FC, symBinAddr: 0x100003CF0, symSize: 0xF8 }
+  - { offsetInCU: 0x2FFC, offset: 0x2FFC, size: 0x8, addend: 0x0, symName: __Z12gaussian_rngv, symObjAddr: 0x0, symBinAddr: 0x100003AF4, symSize: 0x84 }
+  - { offsetInCU: 0x3004, offset: 0x3004, size: 0x8, addend: 0x0, symName: __Z24asian_option_monte_carloidddddi, symObjAddr: 0x84, symBinAddr: 0x100003B78, symSize: 0x178 }
+...

@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/cccurie/Desktop/Algorithms/Capstone/asian_option_monte_carlo_parallel'
+relocations:
+  - { offsetInCU: 0xE4, offset: 0xE4, size: 0x8, addend: 0x0, symName: __Z12gaussian_rngPj, symObjAddr: 0x0, symBinAddr: 0x100003810, symSize: 0x90 }
+  - { offsetInCU: 0x2D45, offset: 0x2D45, size: 0x8, addend: 0x0, symName: __Z24asian_option_monte_carloidddddi, symObjAddr: 0x90, symBinAddr: 0x1000038A0, symSize: 0x110 }
+  - { offsetInCU: 0x2D4D, offset: 0x2D4D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1A0, symBinAddr: 0x1000039B0, symSize: 0x154 }
+  - { offsetInCU: 0x2DE4, offset: 0x2DE4, size: 0x8, addend: 0x0, symName: __Z24asian_option_monte_carloidddddi._omp_fn.0, symObjAddr: 0x320, symBinAddr: 0x100003B30, symSize: 0x1DC }
+  - { offsetInCU: 0x310D, offset: 0x310D, size: 0x8, addend: 0x0, symName: __ZSt4fmaxIdiEN9__gnu_cxx11__promote_2IDTplcvNS1_IT_XsrSt12__is_integerIS2_E7__valueEE6__typeELi0EcvNS1_IT0_XsrS3_IS7_E7__valueEE6__typeELi0EEXsrS3_ISB_E7__valueEE6__typeES2_S7_, symObjAddr: 0x2F4, symBinAddr: 0x100003B04, symSize: 0x2C }
+  - { offsetInCU: 0x3115, offset: 0x3115, size: 0x8, addend: 0x0, symName: __Z24asian_option_monte_carloidddddi._omp_fn.0, symObjAddr: 0x320, symBinAddr: 0x100003B30, symSize: 0x1DC }
+  - { offsetInCU: 0x30CC, offset: 0x30CC, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1A0, symBinAddr: 0x1000039B0, symSize: 0x154 }
+  - { offsetInCU: 0x30D4, offset: 0x30D4, size: 0x8, addend: 0x0, symName: __ZSt4fmaxIdiEN9__gnu_cxx11__promote_2IDTplcvNS1_IT_XsrSt12__is_integerIS2_E7__valueEE6__typeELi0EcvNS1_IT0_XsrS3_IS7_E7__valueEE6__typeELi0EEXsrS3_ISB_E7__valueEE6__typeES2_S7_, symObjAddr: 0x2F4, symBinAddr: 0x100003B04, symSize: 0x2C }
+  - { offsetInCU: 0x321C, offset: 0x321C, size: 0x8, addend: 0x0, symName: __Z12gaussian_rngPj, symObjAddr: 0x0, symBinAddr: 0x100003810, symSize: 0x90 }
+  - { offsetInCU: 0x3224, offset: 0x3224, size: 0x8, addend: 0x0, symName: __Z24asian_option_monte_carloidddddi, symObjAddr: 0x90, symBinAddr: 0x1000038A0, symSize: 0x110 }
+  - { offsetInCU: 0x44, offset: 0x329B, size: 0x8, addend: 0x0, symName: ___aarch64_have_lse_atomics, symObjAddr: 0x263, symBinAddr: 0x100008004, symSize: 0x0 }
+...
