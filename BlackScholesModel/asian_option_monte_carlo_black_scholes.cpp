@@ -54,7 +54,8 @@ int main() {
     start = clock();
 
     // Option parameters
-    int num_paths = 10000000;
+    // int num_paths = 10000000;
+    int num_paths = 10;
     int num_points = 4096;
     double S0 = 100.0;    // Initial stock price
     double K = 100.0;     // Strike price

@@ -37,3 +37,4 @@ references/
 *.exe
 *.out
 *.app
+BlackScholesModel/asian_option_monte_carlo_black_scholes
