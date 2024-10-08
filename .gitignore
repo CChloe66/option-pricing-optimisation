@@ -38,3 +38,6 @@ references/
 *.out
 *.app
 BlackScholesModel/asian_option_monte_carlo_black_scholes
+src_cpu/main
+src_gpu/run_all_engines.sh
+src_gpu/test_results.log
