@@ -9,10 +9,8 @@
 #include <ostream>
 
 using namespace std;
-
 using namespace boost;
 using namespace boost::accumulators;
-
 
 int main(int argc , char  **argv) {
     

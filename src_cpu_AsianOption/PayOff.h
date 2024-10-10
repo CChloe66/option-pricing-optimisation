@@ -2,7 +2,6 @@
 #define PAYOFF_H
 
 
-
 #include <algorithm> // This is needed for the std::max comparison function, used in the pay-off calculations
 
 class PayOff {

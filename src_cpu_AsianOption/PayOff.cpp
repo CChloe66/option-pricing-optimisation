@@ -2,7 +2,6 @@
 #define PAY_OFF_CPP
 
 
-
 #include "PayOff.h"
 
 /***************************************/
