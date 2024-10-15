@@ -5,42 +5,42 @@
 
 BinomialModel::BinomialModel() {}
 
-// double BinomialModel::calculatePrice(const Option& option) const {
-//     const int steps = 12; // Hardcoded steps for monthly intervals
-//     double expiry = option.getTimeToMaturity();
-//     double annualVolatility = option.getVolatility();
-//     double riskFreeRate = option.getRiskFreeRate();
-//     double S = option.getSpotPrice();
-//     double K = option.getStrikePrice();
+double BinomialModel::calculatePrice(const Option& option) const {
+    const int steps = 12; // Hardcoded steps for monthly intervals
+    double expiry = option.getTimeToMaturity();
+    double annualVolatility = option.getVolatility();
+    double riskFreeRate = option.getRiskFreeRate();
+    double S = option.getSpotPrice();
+    double K = option.getStrikePrice();
 
-//     // Calculate time per step, in years
-//     double deltaT = expiry / steps;
-//     // Adjust volatility for monthly steps
-//     double monthlyVolatility = annualVolatility / sqrt(12);
+    // Calculate time per step, in years
+    double deltaT = expiry / steps;
+    // Adjust volatility for monthly steps
+    double monthlyVolatility = annualVolatility / sqrt(12);
 
-//     // Cox-Ross-Rubinstein model parameters for monthly steps
-//     double upFactor = exp(monthlyVolatility * sqrt(deltaT));
-//     double downFactor = 1 / upFactor;
-//     double riskNeutralProb = (exp(riskFreeRate * deltaT) - downFactor) / (upFactor - downFactor);
+    // Cox-Ross-Rubinstein model parameters for monthly steps
+    double upFactor = exp(monthlyVolatility * sqrt(deltaT));
+    double downFactor = 1 / upFactor;
+    double riskNeutralProb = (exp(riskFreeRate * deltaT) - downFactor) / (upFactor - downFactor);
 
-//     double optionPrice = 0.0;
-//     for (int i = 0; i <= steps; ++i) {
-//         double stockPriceAtNode = S * pow(upFactor, i) * pow(downFactor, steps - i);
-//         double payoff = 0;
-//         if (option.getType() == "call") {
-//             payoff = std::max(stockPriceAtNode - K, 0.0);
-//         } else { // put
-//             payoff = std::max(K - stockPriceAtNode, 0.0);
-//         }
-//         double binomialCoefficient = tgamma(steps + 1) / (tgamma(i + 1) * tgamma(steps - i + 1));
-//         optionPrice += binomialCoefficient * pow(riskNeutralProb, i) * pow(1 - riskNeutralProb, steps - i) * payoff;
-//     }
+    double optionPrice = 0.0;
+    for (int i = 0; i <= steps; ++i) {
+        double stockPriceAtNode = S * pow(upFactor, i) * pow(downFactor, steps - i);
+        double payoff = 0;
+        if (option.getType() == "call") {
+            payoff = std::max(stockPriceAtNode - K, 0.0);
+        } else { // put
+            payoff = std::max(K - stockPriceAtNode, 0.0);
+        }
+        double binomialCoefficient = tgamma(steps + 1) / (tgamma(i + 1) * tgamma(steps - i + 1));
+        optionPrice += binomialCoefficient * pow(riskNeutralProb, i) * pow(1 - riskNeutralProb, steps - i) * payoff;
+    }
 
-//     // Discount back to present value
-//     optionPrice *= exp(-riskFreeRate * expiry);
+    // Discount back to present value
+    optionPrice *= exp(-riskFreeRate * expiry);
 
-//     return optionPrice;
-// }
+    return optionPrice;
+}
 
 
 
